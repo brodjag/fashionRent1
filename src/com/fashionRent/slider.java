@@ -50,6 +50,7 @@ public class slider extends Activity implements SensorEventListener {
         super.onCreate(savedInstanceState); con=this;
         //System.gc();
 
+
         SensorManager manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         Sensor accelerometer = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         if(!manager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_GAME)){
